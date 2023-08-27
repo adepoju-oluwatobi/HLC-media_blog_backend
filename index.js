@@ -45,8 +45,8 @@ app.get("/api/announcement", (req,res) => {
      },
      {
        id: 2,
-       name: "Rachael",
-       email: "missrachael41@gmail.com",
+       title: "Rachael",
+       des: "missrachael41@gmail.com",
      },
    ];
    res.json(post);
