@@ -6,20 +6,33 @@ const port = 3000;
 
 app.use(cors());
 
-//routes
+
+const dataDirectory = path.join(__dirname, "data");
+
 app.get("/api/post", (req, res) => {
-  try{
-      const post = [{
-        id: 1,
-        title: "Cat drown of alcohol",
-        des: "loreu ipium kkkkk.."
-      },
-    ];
-    res.json(post);
+  try {
+    const postFilePath = path.join(dataDirectory, "./database/post.json");
+    const postData = JSON.parse(fs.readFileSync(postFilePath, "utf-8"));
+    res.json(postData);
   } catch (error) {
-    res.status(500).json({error: "Cannot fetch user"});
+    res.status(500).json({ error: "Cannot fetch posts" });
   }
-})
+});
+
+//routes
+// app.get("/api/post", (req, res) => {
+//   try{
+//       const post = [{
+//         id: 1,
+//         title: "Cat drown of alcohol",
+//         des: "loreu ipium kkkkk.."
+//       },
+//     ];
+//     res.json(post);
+//   } catch (error) {
+//     res.status(500).json({error: "Cannot fetch user"});
+//   }
+// })
 
 //announcement API
 app.get("/api/announcement", (req,res) => {
