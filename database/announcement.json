@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "http://localhost:3000/images/ann-img.png",
+    "image": "https://hlc-media-backend.onrender.com/images/ann-img.png",
     "title": "School resumes on Monday",
     "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..."
   }
