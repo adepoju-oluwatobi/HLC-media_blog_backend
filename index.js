@@ -6,7 +6,15 @@ const port = 3000;
 const fs = require("fs");
 const path = require("path");
 
-app.use(cors());
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://drive.google.com",
+  "https://another-domain.com",
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+}));
 app.use(express.json());
 
 
