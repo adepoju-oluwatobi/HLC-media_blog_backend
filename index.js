@@ -15,7 +15,7 @@ const router = require("./routes/routes");
 
 // Define a list of allowed origins for CORS
 const allowedOrigins = [
-  "https://hlc-media-blog-frontend.vercel.app",
+  "*",
 ];
 
 // Enable CORS for the specified allowed origins
