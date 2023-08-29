@@ -17,7 +17,7 @@ const router = require("./routes/routes");
 const allowedOrigins = [
   "http://localhost:5173",
   "https://drive.google.com/drive/folders/1C78fTZWnTJpRimj8PRlx6wSvelpg8KKU",
-  "",
+  "https://hlc-media-blog-frontend.vercel.app/",
 ];
 
 // Enable CORS for the specified allowed origins
