@@ -16,7 +16,7 @@ const router = require("./routes/routes");
 // Define a list of allowed origins for CORS
 const allowedOrigins = [
   "https://hlc-media-blog-frontend.vercel.app",
-  "https://hlc-media-blog-frontend-git-main-kunletobi4-gmailcom.vercel.app",
+  "https://hlc-media-blog-frontend-nine.vercel.app",
   "https://hlc-media-blog-frontend-kunletobi4-gmailcom.vercel.app",
 ];
 
